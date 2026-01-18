@@ -1,0 +1,126 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-page base */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f2f4f7; /* light grey page background */
+}
+
+/* Center the card */
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* White card box */
+.card {
+  width: 420px;
+  padding: 32px 36px;
+  border-radius: 18px;
+  background-color: #ffffff; /* white */
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+  color: #111827; /* dark text */
+}
+
+/* Headings */
+.card h1 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.submitted-box h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.field span {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Inputs clearly visible */
+.field input,
+.field textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  background-color: #ffffff;  /* white boxes */
+  color: #111827;             /* dark text */
+}
+
+/* Buttons row */
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn.primary {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.btn.secondary {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Submitted data box */
+.submitted-box {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+  color: #111827;
+}
+
+.submitted-box p {
+  margin-top: 4px;
+}

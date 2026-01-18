@@ -1,0 +1,147 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+html,
+body,
+#root {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-color: #c7b138 !important;
+  color: #000000 !important;
+}
+
+body::before,
+body::after {
+  background-color: #c09e9ed8 !important;
+}
+
+#root {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh !important;
+}
+
+.app-box {
+  background: #ffffff;
+  width: 600px;           
+  padding: 30px;          
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgb(191, 191, 191);
+}
+
+.header-box {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #e3f2fd;
+  color: #000000; 
+}
+
+.header-box h2 {
+  margin: 0;
+  font-size: 26px;      
+}
+
+.input-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #cf3d3d;
+  border: 1px solid #ddd;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #0d93a1;
+  outline: none;
+  font-size: 16px;
+  color: #000000;  
+}
+
+.input-box button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #06417c;
+  color: #b72c2c;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.input-box button:hover {
+  background: #044481;
+}
+
+.input-box input::placeholder {
+  color: #bc2f2f;          
+}
+
+.list-box {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fafafa;
+  border: 1px solid #17a59a;
+  color: #000000;
+}
+
+.list-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-box li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background: #1bd3be;
+  border-radius: 6px;
+  border: 1px solid #23817a;
+}
+
+.list-box li span {
+  word-break: break-word;
+  font-size: 15px;
+}
+
+.list-box li button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #e53935;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.list-box li button:hover {
+  background: #b71c1c;
+}
+
+.empty-text {
+  margin: 0;
+  text-align: center;
+  color: #010000;
+  font-size: 14px;
+}
