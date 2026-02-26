@@ -1,0 +1,39 @@
+/* --- Add these loader styles --- */
+
+.fallback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* The Rotating Spinner */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f1faee; /* Light background of the circle */
+  border-top: 5px solid #457b9d; /* Blue rotating part */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Active state for navigation to show where we are */
+.nav a.active {
+  background-color: #457b9d;
+  color: #f1faee;
+}
+
+/* Ensure Dashboard content inside the card looks clean */
+.card h2 {
+  color: #1d3557;
+  font-size: 1.8rem;
+}
